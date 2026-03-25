@@ -1,1 +1,61 @@
-/* Add styles here */
+/* Theme variables */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --btn-bg: #111111;
+  --btn-text: #ffffff;
+  --toggle-bg: #e0e0e0;
+  --toggle-text: #111111;
+}
+
+[data-theme="dark"] {
+  --bg: #111111;
+  --text: #f0f0f0;
+  --btn-bg: #f0f0f0;
+  --btn-text: #111111;
+  --toggle-bg: #333333;
+  --toggle-text: #f0f0f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+button {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-toggle {
+  background-color: var(--toggle-bg);
+  color: var(--toggle-text);
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.9rem;
+}
