@@ -144,6 +144,24 @@ textarea {
   text-align: center;
 }
 
+#comments {
+  width: 100%;
+  max-width: 520px;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+#comments h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+#disqus_thread {
+  color: var(--text);
+}
+
 #theme-toggle {
   background-color: var(--toggle-bg);
   color: var(--toggle-text);
